@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pure Power Gym – Join Now</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+  <link rel="shortcut icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="Style.css">
+  <style>
+    /* ── Inline validation states ── */
+    .field-error {
+      border-color: #e05c5c !important;
+      background: rgba(224, 92, 92, 0.08) !important;
+    }
+    .field-valid {
+      border-color: #4caf7d !important;
+      background: rgba(76, 175, 125, 0.07) !important;
+    }
+    .validation-msg {
+      display: block;
+      font-size: 0.82em;
+      margin: 4px 0 8px;
+      font-weight: 500;
+    }
+    .error-msg   { color: #e07070; }
+    .success-msg { color: #4caf7d; }
+
+    /* ── Success screen ── */
+    .form-success {
+      text-align: center;
+      padding: 60px 30px;
+    }
+    .success-icon {
+      font-size: 4rem;
+      margin-bottom: 16px;
+    }
+    .form-success h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #3d8ef5;
+      margin-bottom: 14px;
+    }
+    .form-success p {
+      font-size: 1.05rem;
+      color: #c8c8d8;
+      line-height: 1.7;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .form-success strong { color: #ffffff; }
+  </style>
+</head>
+<body>
+
+<div id="container">
+  <header>
+    <a href="about.html"><img src="newlogo.svg" alt="Pure Power Gym" height="160" width="216"></a>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="Contact.html">Contact Us</a></li>
+      <li><a href="index.html">About Us</a></li>
+    </ul>
+  </nav>
+</div>
+
+<main>
+
+  <!-- Membership Tier Cards -->
+  <div class="membership-section">
+    <p>Choose the membership level that matches your grind:</p>
+    <div class="tier-cards">
+
+      <div class="tier-card" id="silver">
+        <span class="tier-badge">&#11041; Silver</span>
+        <p>Access to weights, machines, and personal trainers. Perfect for those who want a focused workout and go home.</p>
+      </div>
+
+      <div class="tier-card" id="Gold">
+        <span class="tier-badge">&#9733; Gold</span>
+        <p>Everything in Silver, plus full gym floor and court access. Ideal for athletes who train hard and play harder.</p>
+      </div>
+
+      <div class="tier-card" id="Platinum">
+        <span class="tier-badge">&#9670; Platinum</span>
+        <p>Unlimited access to everything — courts, weights, recovery rooms, sauna, and red-light therapy. For those who live at the gym.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Membership Form -->
+  <div id="form">
+    <h2>Start Your Membership Today</h2>
+    <form class="form-grid" novalidate>
+
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fName">Full Name:</label>
+        <input type="text" name="fName" id="fName" required placeholder="Jane Smith">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required placeholder="you@email.com" autocomplete="email">
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" required placeholder="(347) 743-4470" autocomplete="tel">
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" required placeholder="e.g. 28" min="16" max="99">
+      </fieldset>
+
+      <fieldset>
+        <legend>Membership Details</legend>
+
+        <label for="partysize">Choose Your Membership Level:</label>
+        <select name="partysize" id="partysize">
+          <option value="Silver">&#11041; Silver</option>
+          <option value="Gold">&#9733; Gold</option>
+          <option value="Platinum">&#9670; Platinum</option>
+        </select>
+
+        <label>How active are you currently?</label>
+        <label><input type="radio" id="notactive"  name="activity" value="notactive">  Not Active</label>
+        <label><input type="radio" id="moderate"   name="activity" value="moderate">   Moderately Active</label>
+        <label><input type="radio" id="veryactive" name="activity" value="veryactive"> Very Active</label>
+
+        <label for="requests">What are your fitness goals?</label>
+        <textarea id="requests" name="questions" rows="5" cols="35" placeholder="e.g. Lose 20 lbs, build muscle, improve my basketball game..."></textarea>
+
+        <!-- Payment Method Toggle -->
+        <label>Payment Method:</label>
+        <div class="payment-toggle">
+          <label>
+            <input type="radio" name="paymentMethod" value="credit" id="payCredit" checked>
+            &#128179; Credit Card
+          </label>
+          <label>
+            <input type="radio" name="paymentMethod" value="routing" id="payRouting">
+            &#127974; Bank / Routing
+          </label>
+        </div>
+
+        <!-- Credit Card Fields -->
+        <div id="credit-fields">
+          <label for="cardName">Name on Card:</label>
+          <input type="text" id="cardName" name="cardName" placeholder="Jane Smith">
+
+          <label for="cardNumber">Card Number:</label>
+          <input type="text" id="cardNumber" name="cardNumber" placeholder="&bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull;" maxlength="19">
+
+          <label for="cardExpiry">Expiration Date:</label>
+          <input type="month" id="cardExpiry" name="cardExpiry">
+
+          <label for="cardCVV">CVV:</label>
+          <input type="text" id="cardCVV" name="cardCVV" placeholder="&bull;&bull;&bull;" maxlength="4">
+        </div>
+
+        <!-- Routing / Bank Fields -->
+        <div id="routing-fields" class="hidden">
+          <label for="bankName">Bank Name:</label>
+          <input type="text" id="bankName" name="bankName" placeholder="e.g. Chase, Wells Fargo">
+
+          <label for="routingNumber">Routing Number:</label>
+          <input type="text" id="routingNumber" name="routingNumber" placeholder="9-digit routing number" maxlength="9">
+
+          <label for="accountNumber">Account Number:</label>
+          <input type="text" id="accountNumber" name="accountNumber" placeholder="Account number">
+
+          <label for="accountType">Account Type:</label>
+          <select id="accountType" name="accountType">
+            <option value="checking">Checking</option>
+            <option value="savings">Savings</option>
+          </select>
+        </div>
+
+      </fieldset>
+
+      <input type="submit" id="submit" value="Join Pure Power Gym 💪" class="btn">
+    </form>
+  </div>
+
+</main>
+
+<footer>
+  <p>&copy; Copyright 2026 Pure Power Gym. All rights reserved.</p>
+  <p><a href="mailto:PurePowerGym@mail.com">PurePowerGym@mail.com</a></p>
+</footer>
+
+<script src="main(1).js"></script>
+</body>
+</html>

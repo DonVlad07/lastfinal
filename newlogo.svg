@@ -1,0 +1,63 @@
+<svg width="680" height="420" viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg">
+  <title>Pure Power Gym Logo</title>
+  <desc>Bold gym logo with barbell icon and the name Pure Power Gym</desc>
+  <defs>
+    <style>
+      .bg-hex { fill: #1a1a1a; }
+      .accent { fill: #e8c327; }
+      .accent-dark { fill: #b5951a; }
+      .white-fill { fill: #ffffff; }
+      .logo-name { font-family: Arial Black, Arial, sans-serif; font-weight: 900; letter-spacing: 2px; fill: #ffffff; }
+      .sub-text { font-family: Arial, sans-serif; font-weight: 400; fill: #e8c327; letter-spacing: 8px; }
+    </style>
+  </defs>
+
+  <!-- White background for export -->
+  <rect width="680" height="420" fill="#ffffff"/>
+
+  <!-- Hexagon background shape -->
+  <polygon points="340,30 560,155 560,295 340,395 120,295 120,155" fill="#1a1a1a" />
+  <!-- Hexagon border accent -->
+  <polygon points="340,30 560,155 560,295 340,395 120,295 120,155" fill="none" stroke="#e8c327" stroke-width="4" />
+
+  <!-- Inner hexagon accent ring -->
+  <polygon points="340,52 542,168 542,282 340,373 138,282 138,168" fill="none" stroke="#e8c327" stroke-width="1.2" opacity="0.4" />
+
+  <!-- Barbell icon -->
+  <!-- Left big plate -->
+  <rect x="168" y="178" width="26" height="68" rx="4" fill="#e8c327"/>
+  <!-- Left small plate -->
+  <rect x="196" y="186" width="14" height="52" rx="3" fill="#b5951a"/>
+  <!-- Bar left -->
+  <rect x="210" y="198" width="62" height="28" rx="2" fill="#cccccc"/>
+  <!-- Center bar grip -->
+  <rect x="272" y="193" width="96" height="38" rx="5" fill="#aaaaaa"/>
+  <!-- Bar right -->
+  <rect x="368" y="198" width="62" height="28" rx="2" fill="#cccccc"/>
+  <!-- Right small plate -->
+  <rect x="430" y="186" width="14" height="52" rx="3" fill="#b5951a"/>
+  <!-- Right big plate -->
+  <rect x="446" y="178" width="26" height="68" rx="4" fill="#e8c327"/>
+
+  <!-- Bar center knurl lines -->
+  <line x1="285" y1="196" x2="285" y2="228" stroke="#888" stroke-width="1.5"/>
+  <line x1="300" y1="196" x2="300" y2="228" stroke="#888" stroke-width="1.5"/>
+  <line x1="315" y1="196" x2="315" y2="228" stroke="#888" stroke-width="1.5"/>
+  <line x1="330" y1="196" x2="330" y2="228" stroke="#888" stroke-width="1.5"/>
+  <line x1="345" y1="196" x2="345" y2="228" stroke="#888" stroke-width="1.5"/>
+  <line x1="360" y1="196" x2="360" y2="228" stroke="#888" stroke-width="1.5"/>
+
+  <!-- PURE POWER text -->
+  <text x="340" y="285" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="48" fill="#ffffff" letter-spacing="3">PURE POWER</text>
+
+  <!-- GYM subtext -->
+  <text x="340" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-weight="400" font-size="18" fill="#e8c327" letter-spacing="10">GYM</text>
+
+  <!-- Decorative lines flanking GYM -->
+  <line x1="158" y1="325" x2="290" y2="325" stroke="#e8c327" stroke-width="1" opacity="0.6"/>
+  <line x1="390" y1="325" x2="522" y2="325" stroke="#e8c327" stroke-width="1" opacity="0.6"/>
+
+  <!-- Small star/diamond accents -->
+  <polygon points="297,325 302,320 307,325 302,330" fill="#e8c327"/>
+  <polygon points="373,325 378,320 383,325 378,330" fill="#e8c327"/>
+</svg>

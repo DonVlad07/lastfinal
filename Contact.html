@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pure Power Gym – Contact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+  <link rel="shortcut icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<div id="container">
+  <header>
+    <a href="index.html"><img src="newlogo.svg" alt="Pure Power Gym" height="160" width="216"></a>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="Reservation (3).html">Join Now</a></li>
+      <li><a href="index.html">About Us</a></li>
+    </ul>
+  </nav>
+</div>
+
+<main>
+
+  <div id="contact">
+    <h2>🏋️ Get In Touch With Us</h2>
+    <h3 class="mobile tel link"><a href="tel:3477434470">(347) 743-4470</a></h3>
+    <h4 class="tablet-desktop tel num">(347) 743-4470</h4>
+    <h4>Email: <a href="mailto:PurePowerGym@mail.com">PurePowerGym@mail.com</a></h4>
+    <h4>📍 300 Jay Street, Brooklyn, NY 11201 &mdash; Open 24/7</h4>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.9438950050226!2d-73.99149402466078!3d40.69723327531847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a4a6c47643b%3A0x10b5d1cf7b2def98!2s300%20Jay%20St%2C%20Brooklyn%2C%20NY%2011201!5e0!3m2!1sen!2sus!4v1773728449857!5m2!1sen!2sus"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <!-- Interactive Gym Events Calendar -->
+  <div id="calendar-section">
+    <h2>📆 Gym Events Calendar</h2>
+    <div class="cal-wrapper">
+      <div class="cal-box">
+        <div class="cal-header">
+          <button class="cal-nav-btn" onclick="prevMonth()" aria-label="Previous month">&#8249;</button>
+          <h3 id="cal-month-label"></h3>
+          <button class="cal-nav-btn" onclick="nextMonth()" aria-label="Next month">&#8250;</button>
+        </div>
+        <div id="cal-grid"></div>
+      </div>
+      <div id="cal-event-panel">
+        <p class="cal-hint">💪 Click a highlighted date to see gym events.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+</main>
+
+<footer>
+  <p>&copy; Copyright 2026 Pure Power Gym. All rights reserved.</p>
+  <p><a href="mailto:PurePowerGym@mail.com">PurePowerGym@mail.com</a></p>
+</footer>
+
+<script src="contact.js"></script>
+</body>
+</html>
